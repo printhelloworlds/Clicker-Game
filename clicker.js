@@ -17,7 +17,13 @@ function clickedbutton() {
   updateScoreBoard();
 }
 function updateScoreBoard() {
-  document.getElementById("money-text").textContent = money;
+  document.getElementById("money-text").textContent = money.toLocaleString(
+    "en-US",
+    {
+      style: "currency",
+      currency: "USD",
+    }
+  );
   document.getElementById("passive-point-text").textContent = passivepoints;
   document.getElementById("multiplier-text").textContent = multiplier;
 }
