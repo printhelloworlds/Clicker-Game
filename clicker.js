@@ -8,6 +8,8 @@ let upgrades = [
   [10, 1000, false],
   [100, 25000, false],
   [1000, 100000, false],
+  [1000, 150000, true],
+  [10000, 500000, false],
 ];
 
 function clickedbutton() {
